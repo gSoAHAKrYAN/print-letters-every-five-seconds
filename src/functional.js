@@ -15,7 +15,7 @@ export default class Text extends Component {
     let letters = "";
 
     setInterval(() => {
-      fetch("http://localhost:8080/output")
+      fetch("http://tv.memories.am:8080/output")
         .then((resp) => {
           return resp.text();
         })
