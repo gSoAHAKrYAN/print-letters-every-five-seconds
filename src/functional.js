@@ -21,6 +21,10 @@ export default class Text extends Component {
         })
         .then(text => {
           const newText = JSON.parse(text).text;
+          if (newText === "/start") {
+            return;
+          }
+
           if (newText != letters) {
             isBack = true
           }
